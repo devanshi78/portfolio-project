@@ -1,0 +1,222 @@
+:root{
+    --theme-bg-dark:#040b14;
+    --theme-bg-light:#ffffff2e;
+    --theme-blue:#149ddd;
+    --theme-white:#ffffff;
+    --theme-light-blue:#fafafd;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.about .about-title h2::before,
+.skill .skill-title h2::before,
+.resume .resume-title h2::before,
+.portfolio .portfolio-title h2::before,
+.services .services-title h2::before,
+.testimonial .testimonial-title h2::before,
+.contact .contact-title h2::before{
+    content: '';
+    position: absolute;
+    background-color: var(--theme-blue);
+    height: 3px;
+    width: 60px;
+    bottom: 0;
+}
+
+/* header section start  */
+
+header{
+    background-color: var(--theme-bg-dark);
+}
+
+header .profile-img img{
+    width: 120px;
+    border-color: var(--theme-bg-light) !important;
+    border-width: 8px !important;
+}
+
+header .header-icon ul li a{
+    background-color: var(--theme-bg-light) !important;
+}
+
+header .header-icon ul li:hover a{
+    background-color: var(--theme-blue) !important;
+    transition: 0.2s ease-in;
+}
+
+header nav ul li:hover a{
+    color: var(--theme-white) !important;
+    background-color: var(--theme-bg-light);
+}
+
+header nav ul li:hover a i{
+    color: var(--theme-blue);
+    transition: 0.2s ease-in;
+}
+
+header nav .navbar-nav .nav-item .dropdown-menu li a:hover{
+    color: var(--theme-white);
+}
+
+header .navbar .nav-pills .nav-item .nav-link.active{
+    color: var(--theme-white) !important;
+    background-color: var(--theme-bg-light);
+}
+
+header .navbar .nav-pills .nav-item .nav-link.active i{
+    color: var(--theme-blue);
+}
+
+/* header section end */
+
+/* main section start  */
+
+main{
+    width: calc(100% - 300px) !important;
+}
+
+/* main section end  */
+
+/* hero section start  */
+
+main .hero .hero-img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000052;
+}
+
+/* hero section end  */
+
+/* about section start */
+
+.about .about-content ul li::before{
+    content: "\f285";
+    font-family: bootstrap-icons !important;
+    color: var(--theme-blue);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    font-weight: bold;
+    transform: translateY(-50%);
+    padding-left: 0;
+}
+
+/* about section end */
+
+/* skill section start */
+
+.skill{
+    background-color: var(--theme-light-blue);
+}
+
+/* skill section end */
+
+/* resume section start  */
+
+.resume .resume-content::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 8px;
+    border: var(--theme-blue) 2px solid !important;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-55%,-50%);
+}
+
+/* resume section end  */
+
+/* portfolio section start  */
+
+.portfolio .portfolio-item{
+    overflow: hidden;
+}
+
+.portfolio .portfolio-item img{
+    transition: all 0.2s ease-in-out;
+}
+
+.portfolio .portfolio-item:hover img{
+    transform: scale(1.2);
+}
+
+.portfolio .portfolio-item .profile-img-overlay{
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio .portfolio-item:hover .profile-img-overlay{
+    opacity: 1;
+}
+
+.disabled span{
+    opacity: 0;
+}
+
+/* portfolio section end  */
+
+/* services section start */
+
+.services ul li p a{
+    font-size: 14px;
+}
+
+.services ul:hover li a i{
+    background-color: white !important;
+    color: var(--theme-blue) !important;
+    transition: 0.5s;
+}
+
+.services ul:hover li h4 a{
+    color: var(--theme-blue) !important;
+    transition: 0.5s;
+}
+
+/* services section end */
+
+/* testimonial section start */
+
+.testimonial{
+    background-color: var(--theme-light-blue);
+}
+
+.testimonial .testimonial-items .testimonial-img{
+    width: 90px;
+    margin: 0 auto;
+}
+
+.testimonial .testimonial-items p::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    width: 0px;
+    height: 0px;
+    left: calc(50% - 20px);
+    border-top: 20px solid var(--theme-white);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+/* testimonial section start */
+
+/* contact section start */
+
+.contact .info .info-item:hover .info-icon i{
+    background-color: var(--theme-blue);
+    color: white;
+}
+
+/* contact section end */
